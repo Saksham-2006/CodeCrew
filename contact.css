@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    border: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+::-webkit-scrollbar{
+    width: 0.6vw;
+    height: 0.65vw;
+    background-color: rgb(0, 0, 0, 0);
+}
+::-webkit-scrollbar-corner{
+    background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(111, 173, 255);
+    border-radius: 5px;
+}
+.bg_video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -999;
+    width: 100%;
+}
+nav{
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin: 20px 40px 20px 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.7);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+nav a:hover{
+    transform: scale(1.3);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+#sec1{
+    display: flex;
+    justify-content: left;
+}
+#sec1 h1,#sec3 div h2{
+    font-size: 80px;
+    color: white;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+#sec1 p,#sec3 div p{
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#sec1 div{
+    width: 50%;
+}
+#sec3{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: flex;
+    border-radius: 40px 40px 0px 0px;
+}
+#sec3 div{
+    width: 50%;
+}
+#sec3 h2,#sec3 img{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-left: 40px;
+    margin-top: 50px;
+}
+#sec3 p{
+    width: 600px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#sec3 form{
+    margin-top: 40px;
+    width: 50%;
+}
+#sec3 form div{
+    display: flex;
+    width: 100%;
+}
+#sec3 form div label{
+    margin-bottom: 20px;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+#sec3 form div input,textarea{
+    padding: 2%;
+    margin-bottom: 20px;
+    width: 1000px;
+    border-radius: 20px;
+}
+/* From Uiverse.io by mrtqzbek11 */ 
+button {
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+    position: relative;
+    top: -80px;
+    left: 35px;
+  }
+  
+  button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    transition: 0.5s;
+  }
+  footer{
+    position: absolute;
+    top: 850px;
+    width: 98%;
+    background-color: rgb(40, 40, 40);
+    padding: 1%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
